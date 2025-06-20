@@ -3,6 +3,19 @@ const itemsPerPage = 5;
 let currentPage = 1;
 let activeCategory = "all";
 let sortOrder = null;
+let products = []; // wordt straks gevuld via fetch
+
+// Haal de data op uit de backend
+async function fetchDrinks() {
+  try {
+    const response = await fetch('http://localhost:3000/drinks');
+    if (!response.ok) throw new Error("Kan drankjes niet ophalen");
+    products = await response.json();
+    displayProducts();
+  } catch (err) {
+    console.error("Fout bij ophalen drankjes:", err);
+  }
+}
 
 // Laat de juiste producten zien op basis van filter, sorteer en paginering
 function displayProducts() {
@@ -75,7 +88,7 @@ function updatePagination(totalItems) {
   }
 }
 
-// Bij het laden van de pagina meteen de producten tonen
+// Bij het laden van de pagina: data ophalen via fetch()
 window.addEventListener("DOMContentLoaded", () => {
-  displayProducts();
+  fetchDrinks();
 });

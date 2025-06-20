@@ -8,19 +8,19 @@ app.use(express.json());
 
 // Data met 13 drankjes
 let drinks = [
-  { "id": 1, "name": "Coca-Cola Original", "category": "Cola", "sugar": 35, "image": "images/coca_cola.jpg" },
-  { "id": 2, "name": "Fanta Orange", "category": "Fruitdrank", "sugar": 33, "image": "images/fanta_orange.jpg" },
-  { "id": 3, "name": "Sprite", "category": "Citrus", "sugar": 30, "image": "images/sprite.jpg" },
-  { "id": 4, "name": "Pepsi Max", "category": "Cola", "sugar": 0, "image": "images/pepsi_max.jpg" },
-  { "id": 5, "name": "Lipton Ice Tea", "category": "Thee", "sugar": 20, "image": "images/lipton.jpg" },
-  { "id": 6, "name": "Rivella", "category": "Frisdrank", "sugar": 15, "image": "images/rivella.jpg" },
-  { "id": 7, "name": "Spa Rood", "category": "Water", "sugar": 0, "image": "images/spa_rood.jpg" },
-  { "id": 8, "name": "AA Drink", "category": "Sportdrank", "sugar": 25, "image": "images/aa_drink.jpg" },
-  { "id": 9, "name": "Capri-Sun", "category": "Vruchtendrank", "sugar": 22, "image": "images/capri_sun.jpg" },
-  { "id": 10, "name": "Red Bull", "category": "Energiedrank", "sugar": 27, "image": "images/red_bull.jpg" },
-  { "id": 11, "name": "Crystal Clear", "category": "Lightdrank", "sugar": 1, "image": "images/crystal_clear.jpg" },
-  { "id": 12, "name": "Minute Maid", "category": "Vruchtensap", "sugar": 24, "image": "images/minute_maid.jpg" },
-  { "id": 13, "name": "7UP", "category": "Citrus", "sugar": 31, "image": "images/7up.jpg" }
+  { "id": 1, "name": "Coca-Cola", "category": "Cola", "sugar": 30, "image": "images/coca_cola.jpg" },
+  { "id": 2, "name": "Coca-Cola Zero", "category": "Cola", "sugar": 0, "image": "images/coca_cola_zero.jpg" },
+  { "id": 3, "name": "Pepsi Max", "category": "Cola", "sugar": 0, "image": "images/pepsi_max.jpg" },
+  { "id": 4, "name": "Fanta Orange", "category": "Fruitdrank", "sugar": 33, "image": "images/fanta_orange.jpg" },
+  { "id": 5, "name": "Fanta Exotic", "category": "Fruitdrank", "sugar": 32, "image": "images/fanta_exotic.jpg" },
+  { "id": 6, "name": "Sprite", "category": "Citroen/Limoen", "sugar": 28, "image": "images/sprite.jpg" },
+  { "id": 7, "name": "7UP", "category": "Citroen/Limoen", "sugar": 27, "image": "images/7up.jpg" },
+  { "id": 8, "name": "Dr. Pepper", "category": "Special", "sugar": 40, "image": "images/dr_pepper.jpg" },
+  { "id": 9, "name": "Mountain Dew", "category": "Special", "sugar": 46, "image": "images/mountain_dew.jpg" },
+  { "id": 10, "name": "Lipton Ice Tea", "category": "Thee", "sugar": 21, "image": "images/lipton.jpg" },
+  { "id": 11, "name": "Red Bull", "category": "Energie", "sugar": 27, "image": "images/red_bull.jpg" },
+  { "id": 12, "name": "Monster Energy", "category": "Energie", "sugar": 54, "image": "images/monster.jpg" },
+  { "id": 13, "name": "Royal Club Tonic", "category": "Bitter", "sugar": 18, "image": "images/tonic.jpg" }
 ];
 
 //Alle drankjes ophalen
