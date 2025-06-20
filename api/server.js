@@ -58,7 +58,7 @@ app.put('/drinks/:id', (req, res) => {
     drinks[index] = { id, ...req.body };
     res.json(drinks[index]);
   } else {
-    res.status(404).json({ error: "Drankje niet gevonden" });
+    res.status(404).json({ error: "Drankje kan niet aangepast worden ID niet gevonden" });
   }
 });
 
@@ -70,7 +70,7 @@ app.delete('/drinks/:id', (req, res) => {
     const deleted = drinks.splice(index, 1);
     res.json(deleted[0]);
   } else {
-    res.status(404).json({ error: "Drankje niet gevonden" });
+    res.status(404).json({ error: "ID nummer niet gevonden van drankje" });
   }
 });
 
