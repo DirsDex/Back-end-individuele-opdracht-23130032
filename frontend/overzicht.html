@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pagina 2 – Overzicht</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Navigatie -->
+<nav>
+  <button class="hamburger" id="menu-toggle">☰</button>
+  <ul>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="overzicht.html">Overzicht</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+<script src="js/menu.js"></script>
+
+
+
+  <main>
+    <h1>Overzicht van de verzameling</h1>
+
+    <!-- Filter dropdown -->
+    <section>
+      <label for="categoryFilter">Filter op categorie:</label>
+      <select id="categoryFilter">
+        <option value="all">Alle categorieën</option>
+        <option value="Cola">Cola</option>
+        <option value="Fruitdrank">Fruitdrank</option>
+        <option value="Citroen/Limoen">Citroen/Limoen</option>
+        <option value="Special">Special</option>
+        <option value="Thee">Thee</option>
+        <option value="Energie">Energie</option>
+        <option value="Bitter">Bitter</option>
+      </select>
+    </section>
+
+    <!-- Sorteerknoppen -->
+    <section>
+      <button onclick="sortItems('asc')">Suikergehalte oplopend</button>
+      <button onclick="sortItems('desc')">Suikergehalte aflopend</button>
+    </section>
+
+    
+    <section id="product-container"></section>
+    <section id="pagination"></section>
+  </main>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+  <div class="footer-banner">
+  <img src="images/footer.jpg"Soda Banner">
+</div>
+
+<footer class="main-footer">
+  <div class="footer-content">
+    <p>&copy; Frisdrankcollectie | Studentnummer: 23130032</p>
+    <p> Software Development - Front-end Individuele Opdracht</p>
+  </div>
+</footer>
+</body>
+</html>
