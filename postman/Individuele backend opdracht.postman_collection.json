@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "d6ee737b-5d5e-4fa1-bb71-b56f4ff2eafa",
+		"name": "Individuele backend opdracht",
+		"description": "CRUD API voor frisdranken - gebruikt voor lokale JSON-server op poort 3000",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41542948"
+	},
+	"item": [
+		{
+			"name": "Gets",
+			"item": [
+				{
+					"name": "Vertoond alle frisdranken",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/drinks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"drinks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Vertoond een frisdrank",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/drinks/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"drinks",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "posts",
+			"item": [
+				{
+					"name": "Voegt frisdrank toe",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Test Cola\",\r\n  \"category\": \"Test\",\r\n  \"sugar\": 99,\r\n  \"image\": \"images/test.jpg\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/drinks",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"drinks"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "puts",
+			"item": [
+				{
+					"name": "aanpassen van een frisdrank",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "    {\r\n      \"id\": \"14\",\r\n      \"name\": \"Test Cola\",\r\n      \"category\": \"Test\",\r\n      \"sugar\": 99,\r\n      \"image\": \"images/test.jpg\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/drinks/1ea5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"drinks",
+								"1ea5"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Delete",
+			"item": [
+				{
+					"name": "Verwijderen van frisdrank",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:3000/drinks/8caf",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"drinks",
+								"8caf"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
