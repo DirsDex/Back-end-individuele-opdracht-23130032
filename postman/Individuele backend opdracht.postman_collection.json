@@ -16,12 +16,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/drinks",
+							"raw": "http://localhost:3001/drinks",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3001",
 							"path": [
 								"drinks"
 							]
@@ -35,12 +35,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3000/drinks/1",
+							"raw": "http://localhost:3001/drinks/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3001",
 							"path": [
 								"drinks",
 								"1"
@@ -69,12 +69,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/drinks",
+							"raw": "http://localhost:3001/drinks",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3001",
 							"path": [
 								"drinks"
 							]
@@ -102,15 +102,15 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3000/drinks/1ea5",
+							"raw": "http://localhost:3001/drinks/1",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3001",
 							"path": [
 								"drinks",
-								"1ea5"
+								"1"
 							]
 						}
 					},
@@ -131,15 +131,15 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "http://localhost:3000/drinks/8caf",
+							"raw": "http://localhost:3001/drinks/13",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "3000",
+							"port": "3001",
 							"path": [
 								"drinks",
-								"8caf"
+								"13"
 							]
 						}
 					},
