@@ -8,142 +8,396 @@
 	},
 	"item": [
 		{
-			"name": "Gets",
+			"name": "CRUD",
 			"item": [
 				{
-					"name": "Vertoond alle frisdranken",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:3000/drinks",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"drinks"
-							]
+					"name": "Gets",
+					"item": [
+						{
+							"name": "Vertoond alle frisdranken",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/drinks",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"drinks"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Vertoond een frisdrank",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/drinks/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"drinks",
+										"1"
+									]
+								}
+							},
+							"response": []
 						}
-					},
-					"response": []
+					]
 				},
 				{
-					"name": "Vertoond een frisdrank",
-					"request": {
-						"method": "GET",
-						"header": [],
-						"url": {
-							"raw": "http://localhost:3000/drinks/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"drinks",
-								"1"
-							]
-						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "posts",
-			"item": [
-				{
-					"name": "Voegt frisdrank toe",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "{\r\n  \"name\": \"Test Cola\",\r\n  \"category\": \"Test\",\r\n  \"sugar\": 99,\r\n  \"image\": \"images/test.jpg\"\r\n}\r\n",
-							"options": {
-								"raw": {
-									"language": "json"
+					"name": "posts",
+					"item": [
+						{
+							"name": "Voegt frisdrank toe",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Test sprite\",\r\n  \"category\": \"Test\",\r\n  \"sugar\": 99,\r\n  \"image\": \"images/test.jpg\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/drinks/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"drinks",
+										""
+									]
 								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:3000/drinks",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"drinks"
-							]
+							},
+							"response": []
 						}
-					},
-					"response": []
-				}
-			]
-		},
-		{
-			"name": "puts",
-			"item": [
+					]
+				},
 				{
-					"name": "aanpassen van een frisdrank",
-					"request": {
-						"method": "PUT",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": "    {\r\n      \"id\": \"14\",\r\n      \"name\": \"Test Cola\",\r\n      \"category\": \"Test\",\r\n      \"sugar\": 99,\r\n      \"image\": \"images/test.jpg\"\r\n    }",
-							"options": {
-								"raw": {
-									"language": "json"
+					"name": "puts",
+					"item": [
+						{
+							"name": "aanpassen van een frisdrank",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "    {\r\n      \"id\": \"14\",\r\n      \"name\": \"Test Cola\",\r\n      \"category\": \"Test\",\r\n      \"sugar\": 99,\r\n      \"image\": \"images/test.jpg\"\r\n    }",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/drinks/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"drinks",
+										"1"
+									]
 								}
-							}
-						},
-						"url": {
-							"raw": "http://localhost:3000/drinks/1",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"drinks",
-								"1"
-							]
+							},
+							"response": []
 						}
-					},
-					"response": []
+					]
+				},
+				{
+					"name": "Delete",
+					"item": [
+						{
+							"name": "Verwijderen van frisdrank",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:3000/drinks/13",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"drinks",
+										"13"
+									]
+								}
+							},
+							"response": []
+						}
+					]
 				}
-			]
+			],
+			"description": "Hierin staan al de functionaliteiten"
 		},
 		{
-			"name": "Delete",
+			"name": "Tests",
 			"item": [
 				{
-					"name": "Verwijderen van frisdrank",
-					"request": {
-						"method": "DELETE",
-						"header": [],
-						"body": {
-							"mode": "raw",
-							"raw": ""
+					"name": "Get",
+					"item": [
+						{
+							"name": "(test 1) Alle drankjes ophalen",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/drinks",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"drinks"
+									]
+								}
+							},
+							"response": []
 						},
-						"url": {
-							"raw": "http://localhost:3000/drinks/13",
-							"protocol": "http",
-							"host": [
-								"localhost"
-							],
-							"port": "3000",
-							"path": [
-								"drinks",
-								"13"
-							]
+						{
+							"name": "(Test 2) Specifiek drankje ophalen (ID 1)",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/drinks/1",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"drinks",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "(test 3) Ongeldig ID ophalen",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/drinks/999",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"drinks",
+										"999"
+									]
+								}
+							},
+							"response": []
 						}
-					},
-					"response": []
+					]
+				},
+				{
+					"name": "Post",
+					"item": [
+						{
+							"name": "(test 4) Nieuwe drankje toevoegen",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Test Mountain dew\",\r\n  \"category\": \"Test\",\r\n  \"sugar\": 99,\r\n  \"image\": \"images/test.jpg\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/drinks/",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"drinks",
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "put",
+					"item": [
+						{
+							"name": "(test 5) Drankje bewerken",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Fanta Zero\",\r\n  \"category\": \"Fruitdrank\",\r\n  \"sugar\": 0,\r\n  \"image\": \"images/fanta_zero.jpg\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/drinks/2",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"drinks",
+										"2"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "(test 6) Ongeldig ID bewerken",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"Fanta Zero\",\r\n  \"category\": \"Fruitdrank\",\r\n  \"sugar\": 0,\r\n  \"image\": \"images/fanta_zero.jpg\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:3000/drinks/999",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"drinks",
+										"999"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "delete",
+					"item": [
+						{
+							"name": "(test 7) Drankje verwijderen",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/drinks/14",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"drinks",
+										"14"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "(test 8) Ongeldig id verwijderen",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/drinks/999",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"drinks",
+										"999"
+									]
+								}
+							},
+							"response": []
+						}
+					]
 				}
 			]
 		}
